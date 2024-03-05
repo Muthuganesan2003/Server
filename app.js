@@ -7,7 +7,6 @@ const cookieParser= require("cookie-parser");
 const {requiredAuth,checkUser}=require("./middleware/authMiddleware");
 const app=express();
 
-
 //Database connection
 const dbconnect="mongodb+srv://muthuganesan2003:Gear504072003@cluster0.sq3jdtz.mongodb.net/Project_DB?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.connect(dbconnect)
