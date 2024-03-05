@@ -1,0 +1,123 @@
+  /* General styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif; /* Friendly default font */
+}
+
+/* Navigation bar styles */
+nav {
+    display: flex; /* Allow horizontal layout for navigation elements */
+    justify-content: space-between; /* Evenly distribute items horizontally */
+    align-items: center; /* Align vertically along center */
+    padding: 1rem 2rem; /* Add padding for spacing */
+    background-color: #111; /* Dark background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer box-shadow */
+}
+
+nav > div {
+    display: flex; /* Allow logo and tagline to align side-by-side */
+    align-items: center; /* Vertically align logo and tagline */
+    gap: 1rem; /* Spacing between logo and tagline */
+}
+
+nav h4 {
+    margin: 0; /* Reset default margin for a cleaner look */
+    font-size: 1.4rem; /* Adjust heading size as needed */
+    color: #fff; /* White text color for contrast */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    letter-spacing: 0.1rem; /* Slightly wider letter spacing */
+}
+
+nav p {
+    margin: 0 0.5rem; /* Add some margin for better spacing */
+    font-size: 0.9rem; /* Adjust tagline text size */
+    color: #ccc; /* Light grayish text color with lower opacity */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+nav ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Reset default padding */
+    margin: 0; /* Reset default margin */
+}
+
+nav li {
+    display: inline-block; /* Display list items horizontally */
+    margin: 0 1rem; /* Add horizontal spacing between links */
+    position: relative; /* Required for hover effect with background */
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* White text color for contrast */
+    font-weight: bold; /* Make links stand out slightly */
+    transition: color 0.2s ease-in-out; /* Smooth hover effects */
+}
+
+nav a:hover {
+    color: #42a5f5; /* Light blue hover color */
+}
+
+nav a:after {
+    content: ""; /* Empty content for pseudo-element */
+    position: absolute; /* Position the element over the link */
+    bottom: 0; /* Align to the bottom of the link */
+    left: 0; /* Align to the left of the link */
+    width: 100%; /* Span the entire width of the link */
+    height: 2px; /* Height of the underline */
+    background-color: transparent; /* Initially transparent background */
+    transition: background-color 0.2s ease-in-out; /* Smooth transition */
+}
+
+nav a:hover:after {
+    background-color: #42a5f5; /* Light blue underline on hover */
+}
+/* Form styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft box-shadow */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 150px; /* Set a fixed height for textarea */
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.create_blog {
+    margin-top: 50px;
+}
